@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "440467835142",
+    "project_id": "prism-insight-7",
+    "storage_bucket": "prism-insight-7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440467835142:android:f9ee88f449d27ddb827687",
+        "android_client_info": {
+          "package_name": "com.finvy.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440467835142-obnr2ifv09nfggmkf2q3ftqsnas71od2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5lEjmGVirLsk4cNltQw7YFj9SZEYmGq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440467835142-obnr2ifv09nfggmkf2q3ftqsnas71od2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440467835142:android:60fdc7fcf323d3f9827687",
+        "android_client_info": {
+          "package_name": "com.prisminsight.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440467835142-obnr2ifv09nfggmkf2q3ftqsnas71od2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5lEjmGVirLsk4cNltQw7YFj9SZEYmGq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440467835142-obnr2ifv09nfggmkf2q3ftqsnas71od2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

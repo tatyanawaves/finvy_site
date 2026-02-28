@@ -46,7 +46,7 @@ export const ReceiptsScreen: React.FC = () => {
     );
   };
 
-  const currency = receipts[0]?.currency || '₽';
+  const currency = receipts[0]?.currency || '₸';
 
   if (loading && !refreshing) {
     return (
@@ -140,7 +140,7 @@ export const ReceiptsScreen: React.FC = () => {
                 <View style={styles.receiptItems}>
                   {receipt.items_aggregated.slice(0, 3).map((item, idx) => (
                     <View key={idx} style={styles.receiptItem}>
-                      <Text style={styles.itemName} numberOfLines={1}>
+                      <Text style={styles.itemName}>
                         {item.name}
                       </Text>
                       <View style={[

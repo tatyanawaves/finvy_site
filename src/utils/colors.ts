@@ -77,7 +77,7 @@ export const getTypeLabel = (type: string): string => {
     case 'Standard':
       return 'Стандартное';
     case 'Luxury':
-      return 'Роскошь';
+      return 'Премиум';
     case 'Health':
       return 'Здоровье';
     default:

@@ -1,0 +1,152 @@
+{
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успешно",
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "close": "Закрыть",
+    "back": "Назад",
+    "next": "Далее",
+    "done": "Готово",
+    "yes": "Да",
+    "no": "Нет",
+    "ok": "ОК",
+    "currency": "₸",
+    "perMonth": "/мес"
+  },
+  "nav": {
+    "receipts": "Чеки",
+    "analytics": "Аналитика",
+    "markets": "Рынки",
+    "learn": "Обучение",
+    "assistant": "AI",
+    "profile": "Профиль"
+  },
+  "auth": {
+    "login": "Войти",
+    "register": "Регистрация",
+    "logout": "Выйти",
+    "email": "Email",
+    "password": "Пароль",
+    "confirmPassword": "Подтвердите пароль",
+    "forgotPassword": "Забыли пароль?",
+    "noAccount": "Нет аккаунта?",
+    "hasAccount": "Уже есть аккаунт?",
+    "signInWithGoogle": "Войти через Google",
+    "welcome": "Добро пожаловать в Finvy",
+    "subtitle": "Умный анализ ваших финансов"
+  },
+  "receipts": {
+    "title": "Мои чеки",
+    "upload": "Загрузить чек",
+    "scan": "Сканировать",
+    "addManually": "Добавить вручную",
+    "noReceipts": "Нет чеков",
+    "noReceiptsDesc": "Загрузите первый чек для анализа",
+    "total": "Всего потрачено",
+    "thisMonth": "За этот месяц",
+    "avgCheck": "Средний чек",
+    "categories": "Категории",
+    "merchant": "Магазин",
+    "date": "Дата",
+    "amount": "Сумма",
+    "items": "Позиции"
+  },
+  "analytics": {
+    "title": "Умная аналитика",
+    "savingsOpportunity": "Возможность экономии",
+    "potentialSavings": "Потенциальная экономия",
+    "monthlyBreakdown": "Распределение по месяцам",
+    "categoryBreakdown": "По категориям",
+    "typeDistribution": "Распределение по типам",
+    "topMerchants": "Топ магазинов",
+    "luxurySpending": "Премиальные расходы",
+    "essentialSpending": "Необходимые расходы",
+    "investmentRecommendations": "Инвестиционные рекомендации",
+    "personalPlan": "Персональный план инвестиций",
+    "personalPlanDesc": "Пройдите тест — узнайте куда инвестировать",
+    "takeTest": "Пройти тест"
+  },
+  "markets": {
+    "title": "Рынки",
+    "stocks": "Акции",
+    "crypto": "Криптовалюты",
+    "metals": "Металлы",
+    "kzStocks": "Акции КЗ",
+    "usStocks": "Акции США",
+    "live": "Live",
+    "demo": "Demo",
+    "lastUpdated": "Обновлено",
+    "price": "Цена",
+    "change": "Изменение",
+    "volume": "Объём",
+    "marketCap": "Капитализация",
+    "refresh": "Обновить"
+  },
+  "assistant": {
+    "title": "AI Ассистент",
+    "placeholder": "Напишите сообщение...",
+    "send": "Отправить",
+    "newChat": "Новый чат",
+    "deleteChat": "Удалить чат",
+    "chats": "Чаты",
+    "welcome": "Привет! Я ваш финансовый ассистент Finvy. Могу проанализировать ваши траты и дать советы по инвестициям. Чем могу помочь?",
+    "thinking": "Думаю...",
+    "quickPrompts": {
+      "analyze": "Проанализируй мои траты",
+      "save": "Где можно сэкономить?",
+      "invest": "Куда инвестировать?",
+      "budget": "Составь бюджет"
+    }
+  },
+  "quiz": {
+    "title": "Персональный план инвестиций",
+    "question": "Вопрос",
+    "of": "из",
+    "getResult": "Получить план",
+    "yourPlan": "Ваш персональный план",
+    "profile": "Профиль",
+    "conservative": "Консервативный",
+    "moderate": "Умеренный",
+    "aggressive": "Агрессивный",
+    "monthlyInvestment": "Рекомендуемая сумма",
+    "portfolioAllocation": "Распределение портфеля",
+    "whatToBuy": "Что купить сейчас",
+    "yourSteps": "Ваши следующие шаги",
+    "tips": "Советы для вас",
+    "disclaimer": "Это не финансовая рекомендация. Инвестиции связаны с риском.",
+    "restart": "Пройти заново"
+  },
+  "profile": {
+    "title": "Профиль",
+    "settings": "Настройки",
+    "language": "Язык",
+    "theme": "Тема",
+    "notifications": "Уведомления",
+    "about": "О приложении",
+    "version": "Версия",
+    "support": "Поддержка"
+  },
+  "languages": {
+    "ru": "Русский",
+    "kk": "Қазақша",
+    "en": "English"
+  },
+  "categories": {
+    "food": "Еда и продукты",
+    "transport": "Транспорт",
+    "entertainment": "Развлечения",
+    "shopping": "Покупки",
+    "health": "Здоровье",
+    "utilities": "Коммунальные услуги",
+    "other": "Другое"
+  },
+  "types": {
+    "essential": "Необходимое",
+    "optional": "Опциональное",
+    "luxury": "Премиум"
+  }
+}

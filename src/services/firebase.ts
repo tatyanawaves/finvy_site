@@ -1,10 +1,10 @@
-import { initializeApp } from 'firebase/app';
-import { initializeAuth, getReactNativePersistence } from 'firebase/auth';
+import { initializeApp, getApps } from 'firebase/app';
+import { getAuth, initializeAuth, getReactNativePersistence } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { Platform } from 'react-native';
 
 // Firebase конфигурация
-// Замените на свои значения из Firebase Console
 const firebaseConfig = {
   apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY || "YOUR_API_KEY",
   authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN || "YOUR_PROJECT.firebaseapp.com",
@@ -14,15 +14,22 @@ const firebaseConfig = {
   appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID || "YOUR_APP_ID"
 };
 
-// Инициализация Firebase
-const app = initializeApp(firebaseConfig);
+// Инициализация Firebase (проверка на повторную инициализацию)
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 
-// Auth с AsyncStorage для React Native
-export const auth = initializeAuth(app, {
-  persistence: getReactNativePersistence(AsyncStorage)
-});
+// Auth - для React Native используем AsyncStorage persistence
+let auth;
+try {
+  auth = initializeAuth(app, {
+    persistence: getReactNativePersistence(AsyncStorage)
+  });
+} catch (error) {
+  // Если уже инициализирован, получаем существующий экземпляр
+  auth = getAuth(app);
+}
 
 // Firestore
 export const db = getFirestore(app);
 
+export { auth };
 export default app;

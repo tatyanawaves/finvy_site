@@ -1,0 +1,152 @@
+{
+  "common": {
+    "loading": "Жүктелуде...",
+    "error": "Қате",
+    "success": "Сәтті",
+    "cancel": "Бас тарту",
+    "save": "Сақтау",
+    "delete": "Жою",
+    "edit": "Өңдеу",
+    "close": "Жабу",
+    "back": "Артқа",
+    "next": "Келесі",
+    "done": "Дайын",
+    "yes": "Иә",
+    "no": "Жоқ",
+    "ok": "OK",
+    "currency": "₸",
+    "perMonth": "/ай"
+  },
+  "nav": {
+    "receipts": "Чектер",
+    "analytics": "Талдау",
+    "markets": "Нарықтар",
+    "learn": "Оқыту",
+    "assistant": "AI",
+    "profile": "Профиль"
+  },
+  "auth": {
+    "login": "Кіру",
+    "register": "Тіркелу",
+    "logout": "Шығу",
+    "email": "Email",
+    "password": "Құпия сөз",
+    "confirmPassword": "Құпия сөзді растаңыз",
+    "forgotPassword": "Құпия сөзді ұмыттыңыз ба?",
+    "noAccount": "Аккаунт жоқ па?",
+    "hasAccount": "Аккаунт бар ма?",
+    "signInWithGoogle": "Google арқылы кіру",
+    "welcome": "Finvy-ге қош келдіңіз",
+    "subtitle": "Қаржыңызды ақылды талдау"
+  },
+  "receipts": {
+    "title": "Менің чектерім",
+    "upload": "Чек жүктеу",
+    "scan": "Сканерлеу",
+    "addManually": "Қолмен қосу",
+    "noReceipts": "Чектер жоқ",
+    "noReceiptsDesc": "Талдау үшін бірінші чекті жүктеңіз",
+    "total": "Барлық шығындар",
+    "thisMonth": "Осы айда",
+    "avgCheck": "Орташа чек",
+    "categories": "Санаттар",
+    "merchant": "Дүкен",
+    "date": "Күні",
+    "amount": "Сома",
+    "items": "Позициялар"
+  },
+  "analytics": {
+    "title": "Ақылды талдау",
+    "savingsOpportunity": "Үнемдеу мүмкіндігі",
+    "potentialSavings": "Ықтимал үнемдеу",
+    "monthlyBreakdown": "Айлық бөлім",
+    "categoryBreakdown": "Санаттар бойынша",
+    "typeDistribution": "Түрлері бойынша бөлу",
+    "topMerchants": "Үздік дүкендер",
+    "luxurySpending": "Сәнді шығындар",
+    "essentialSpending": "Қажетті шығындар",
+    "investmentRecommendations": "Инвестиция ұсыныстары",
+    "personalPlan": "Жеке инвестиция жоспары",
+    "personalPlanDesc": "Тест тапсырыңыз — қайда инвестициялау керектігін біліңіз",
+    "takeTest": "Тест тапсыру"
+  },
+  "markets": {
+    "title": "Нарықтар",
+    "stocks": "Акциялар",
+    "crypto": "Криптовалюталар",
+    "metals": "Металдар",
+    "kzStocks": "ҚЗ акциялары",
+    "usStocks": "АҚШ акциялары",
+    "live": "Тікелей",
+    "demo": "Демо",
+    "lastUpdated": "Жаңартылды",
+    "price": "Баға",
+    "change": "Өзгеріс",
+    "volume": "Көлем",
+    "marketCap": "Капитализация",
+    "refresh": "Жаңарту"
+  },
+  "assistant": {
+    "title": "AI Көмекші",
+    "placeholder": "Хабарлама жазыңыз...",
+    "send": "Жіберу",
+    "newChat": "Жаңа чат",
+    "deleteChat": "Чатты жою",
+    "chats": "Чаттар",
+    "welcome": "Сәлем! Мен сіздің қаржылық көмекшіңіз Finvy-мін. Шығындарыңызды талдап, инвестиция бойынша кеңес бере аламын. Қалай көмектесе аламын?",
+    "thinking": "Ойланудамын...",
+    "quickPrompts": {
+      "analyze": "Шығындарымды талда",
+      "save": "Қайда үнемдеуге болады?",
+      "invest": "Қайда инвестициялау?",
+      "budget": "Бюджет құр"
+    }
+  },
+  "quiz": {
+    "title": "Жеке инвестиция жоспары",
+    "question": "Сұрақ",
+    "of": "/",
+    "getResult": "Жоспарды алу",
+    "yourPlan": "Сіздің жеке жоспарыңыз",
+    "profile": "Профиль",
+    "conservative": "Консервативті",
+    "moderate": "Орташа",
+    "aggressive": "Агрессивті",
+    "monthlyInvestment": "Ұсынылатын сома",
+    "portfolioAllocation": "Портфельді бөлу",
+    "whatToBuy": "Қазір не сатып алу керек",
+    "yourSteps": "Келесі қадамдарыңыз",
+    "tips": "Сізге кеңестер",
+    "disclaimer": "Бұл қаржылық ұсыныс емес. Инвестициялар тәуекелмен байланысты.",
+    "restart": "Қайта бастау"
+  },
+  "profile": {
+    "title": "Профиль",
+    "settings": "Баптаулар",
+    "language": "Тіл",
+    "theme": "Тема",
+    "notifications": "Хабарламалар",
+    "about": "Қолданба туралы",
+    "version": "Нұсқасы",
+    "support": "Қолдау"
+  },
+  "languages": {
+    "ru": "Русский",
+    "kk": "Қазақша",
+    "en": "English"
+  },
+  "categories": {
+    "food": "Тамақ және азық-түлік",
+    "transport": "Көлік",
+    "entertainment": "Ойын-сауық",
+    "shopping": "Сатып алу",
+    "health": "Денсаулық",
+    "utilities": "Коммуналдық қызметтер",
+    "other": "Басқа"
+  },
+  "types": {
+    "essential": "Қажетті",
+    "optional": "Қосымша",
+    "luxury": "Сәнді"
+  }
+}

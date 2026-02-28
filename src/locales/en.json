@@ -1,0 +1,152 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "currency": "₸",
+    "perMonth": "/mo"
+  },
+  "nav": {
+    "receipts": "Receipts",
+    "analytics": "Analytics",
+    "markets": "Markets",
+    "learn": "Learn",
+    "assistant": "AI",
+    "profile": "Profile"
+  },
+  "auth": {
+    "login": "Sign In",
+    "register": "Sign Up",
+    "logout": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signInWithGoogle": "Sign in with Google",
+    "welcome": "Welcome to Finvy",
+    "subtitle": "Smart analysis of your finances"
+  },
+  "receipts": {
+    "title": "My Receipts",
+    "upload": "Upload Receipt",
+    "scan": "Scan",
+    "addManually": "Add Manually",
+    "noReceipts": "No Receipts",
+    "noReceiptsDesc": "Upload your first receipt for analysis",
+    "total": "Total Spent",
+    "thisMonth": "This Month",
+    "avgCheck": "Average Check",
+    "categories": "Categories",
+    "merchant": "Merchant",
+    "date": "Date",
+    "amount": "Amount",
+    "items": "Items"
+  },
+  "analytics": {
+    "title": "Smart Analytics",
+    "savingsOpportunity": "Savings Opportunity",
+    "potentialSavings": "Potential Savings",
+    "monthlyBreakdown": "Monthly Breakdown",
+    "categoryBreakdown": "By Category",
+    "typeDistribution": "Type Distribution",
+    "topMerchants": "Top Merchants",
+    "luxurySpending": "Luxury Spending",
+    "essentialSpending": "Essential Spending",
+    "investmentRecommendations": "Investment Tips",
+    "personalPlan": "Personal Investment Plan",
+    "personalPlanDesc": "Take the test — discover where to invest",
+    "takeTest": "Take Test"
+  },
+  "markets": {
+    "title": "Markets",
+    "stocks": "Stocks",
+    "crypto": "Crypto",
+    "metals": "Metals",
+    "kzStocks": "KZ Stocks",
+    "usStocks": "US Stocks",
+    "live": "Live",
+    "demo": "Demo",
+    "lastUpdated": "Updated",
+    "price": "Price",
+    "change": "Change",
+    "volume": "Volume",
+    "marketCap": "Market Cap",
+    "refresh": "Refresh"
+  },
+  "assistant": {
+    "title": "AI Assistant",
+    "placeholder": "Type a message...",
+    "send": "Send",
+    "newChat": "New Chat",
+    "deleteChat": "Delete Chat",
+    "chats": "Chats",
+    "welcome": "Hi! I'm Finvy, your financial assistant. I can analyze your spending and provide investment advice. How can I help?",
+    "thinking": "Thinking...",
+    "quickPrompts": {
+      "analyze": "Analyze my spending",
+      "save": "Where can I save?",
+      "invest": "Where to invest?",
+      "budget": "Create budget"
+    }
+  },
+  "quiz": {
+    "title": "Personal Investment Plan",
+    "question": "Question",
+    "of": "of",
+    "getResult": "Get Your Plan",
+    "yourPlan": "Your Personal Plan",
+    "profile": "Profile",
+    "conservative": "Conservative",
+    "moderate": "Moderate",
+    "aggressive": "Aggressive",
+    "monthlyInvestment": "Recommended Amount",
+    "portfolioAllocation": "Portfolio Allocation",
+    "whatToBuy": "What to Buy Now",
+    "yourSteps": "Your Next Steps",
+    "tips": "Tips for You",
+    "disclaimer": "This is not financial advice. Investments involve risk.",
+    "restart": "Start Over"
+  },
+  "profile": {
+    "title": "Profile",
+    "settings": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "about": "About App",
+    "version": "Version",
+    "support": "Support"
+  },
+  "languages": {
+    "ru": "Русский",
+    "kk": "Қазақша",
+    "en": "English"
+  },
+  "categories": {
+    "food": "Food & Groceries",
+    "transport": "Transport",
+    "entertainment": "Entertainment",
+    "shopping": "Shopping",
+    "health": "Health",
+    "utilities": "Utilities",
+    "other": "Other"
+  },
+  "types": {
+    "essential": "Essential",
+    "optional": "Optional",
+    "luxury": "Luxury"
+  }
+}

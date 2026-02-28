@@ -13,7 +13,7 @@ import * as ImagePicker from 'expo-image-picker';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-import { analyzeReceiptImage } from '../services/geminiService';
+import { analyzeReceiptWithGroq } from '../services/groqService';
 import { useReceipts } from '../hooks/useReceipts';
 import { colors } from '../utils/colors';
 
@@ -62,7 +62,7 @@ export const CameraScreen: React.FC = () => {
   const analyzeImage = async (base64: string, mimeType: string) => {
     setAnalyzing(true);
     try {
-      const receiptData = await analyzeReceiptImage(base64, mimeType);
+      const receiptData = await analyzeReceiptWithGroq(base64, mimeType);
       const result = await addReceipt(receiptData);
       
       if (result.success) {

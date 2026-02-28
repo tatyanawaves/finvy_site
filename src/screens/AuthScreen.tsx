@@ -83,7 +83,7 @@ export const AuthScreen: React.FC = () => {
               <Ionicons name="receipt-outline" size={40} color="white" />
             </LinearGradient>
             <Text style={styles.logoText}>
-              Prism<Text style={styles.logoAccent}>Insight</Text>
+              Fin<Text style={styles.logoAccent}>vy</Text>
             </Text>
             <Text style={styles.subtitle}>Умный анализатор расходов</Text>
           </View>
