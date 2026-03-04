@@ -256,6 +256,85 @@
             margin-bottom: 4rem;
         }
 
+        /* Mobile hero card (replaces big desktop visual) */
+        .hero-mobile-card {
+            display: none;
+            background: rgba(15, 18, 25, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 1.5rem;
+            width: 100%;
+            max-width: 380px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(59, 130, 246, 0.08);
+            backdrop-filter: var(--glass-blur);
+        }
+
+        .hero-mobile-balance {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .hero-mobile-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-mobile-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .hero-mobile-stat {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-glass);
+            border-radius: 12px;
+            padding: 0.9rem;
+        }
+
+        .hero-mobile-stat-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .hero-mobile-stat-val {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-mobile-stat-trend {
+            font-size: 0.7rem;
+            color: #3b82f6;
+            margin-top: 2px;
+        }
+
+        .hero-mobile-stat-trend.down {
+            color: #ef4444;
+        }
+
+        .hero-mobile-bars {
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+            height: 60px;
+        }
+
+        .hero-mobile-bar {
+            flex: 1;
+            background: rgba(59, 130, 246, 0.15);
+            border-radius: 4px 4px 0 0;
+        }
+
+        .hero-mobile-bar.active {
+            background: var(--primary-gradient);
+        }
+
         .hero-visual {
             width: 100%;
             max-width: 1100px;
@@ -705,9 +784,87 @@
             font-size: 0.9rem;
         }
 
+        /* ── Hamburger button ── */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+            z-index: 200;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--text-main);
+            border-radius: 2px;
+            transition: all 0.35s ease;
+            transform-origin: center;
+        }
+
+        .hamburger.open span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger.open span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        .hamburger.open span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* ── Mobile nav drawer ── */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(6, 11, 20, 0.97);
+            backdrop-filter: var(--glass-blur);
+            z-index: 150;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2.5rem;
+            opacity: 0;
+            transition: opacity 0.35s ease;
+        }
+
+        .mobile-menu.open {
+            display: flex;
+            opacity: 1;
+        }
+
+        .mobile-menu a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            transition: color 0.2s;
+        }
+
+        .mobile-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        /* ── Tablet ── */
         @media (max-width: 900px) {
             .nav-links {
                 display: none;
+            }
+
+            .hamburger {
+                display: flex;
             }
 
             .hero-visual {
@@ -741,6 +898,148 @@
                 gap: 2rem;
                 flex-direction: column;
             }
+
+            /* Analytics 2-col → 1-col */
+            .analytics-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .cta-group {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+        /* ── Mobile ── */
+        @media (max-width: 900px) {
+            .hero-mobile-card {
+                display: block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                padding: 1rem 5%;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .hero {
+                padding: 8rem 5% 3rem;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.9rem, 8vw, 2.6rem);
+                letter-spacing: -1.5px;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .badge {
+                font-size: 0.78rem;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                padding: 0.9rem 1.4rem;
+                font-size: 0.95rem;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .cta-group {
+                flex-direction: column;
+                width: 100%;
+                max-width: 340px;
+            }
+
+            .features {
+                padding: 5rem 5%;
+            }
+
+            .section-header h2 {
+                font-size: clamp(1.8rem, 7vw, 2.4rem);
+            }
+
+            .section-header p {
+                font-size: 1rem;
+            }
+
+            .bento-item {
+                padding: 1.8rem;
+            }
+
+            .bento-item h3 {
+                font-size: 1.25rem;
+            }
+
+            .bento-item p {
+                font-size: 0.95rem;
+            }
+
+            .metric-val {
+                font-size: 2.2rem;
+            }
+
+            .cta-box {
+                padding: 4rem 1.5rem;
+                border-radius: 20px;
+            }
+
+            .cta-box h2 {
+                font-size: clamp(1.8rem, 7vw, 2.6rem);
+                letter-spacing: -1px;
+            }
+
+            .cta-box p {
+                font-size: 1rem;
+            }
+
+            .email-form input {
+                padding: 1rem 1.2rem;
+                font-size: 1rem;
+            }
+
+            .email-form .btn-primary {
+                padding: 1rem 1.5rem;
+            }
+
+            /* Analytics section */
+            .analytics-text h3 {
+                font-size: 1.5rem !important;
+            }
+
+            .analytics-text p {
+                font-size: 1rem !important;
+            }
+
+            .analytics-quote {
+                font-size: 0.95rem !important;
+            }
+
+            .ai-card {
+                padding: 1.5rem !important;
+            }
+        }
+
+        /* ── Small phones ── */
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .badge {
+                font-size: 0.72rem;
+                padding: 0.4rem 0.9rem;
+            }
+
+            .metric-val {
+                font-size: 1.9rem;
+            }
         }
     </style>
 </head>
@@ -759,9 +1058,19 @@
             <a href="#analytics">Аналитика</a>
             <a href="javascript:void(0)" onclick="alert('Раздел Безопасность в разработке')">Безопасность</a>
         </div>
-        <div>
-        </div>
+        <button class="hamburger" id="hamburger" aria-label="Открыть меню" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
+
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+        <a href="#features" class="mobile-nav-link">Особенности</a>
+        <a href="#analytics" class="mobile-nav-link">Аналитика</a>
+        <a href="javascript:void(0)" onclick="alert('Раздел Безопасность в разработке')" class="mobile-nav-link">Безопасность</a>
+        <a href="#contacts" class="btn-primary mobile-nav-link" style="font-size: 1.1rem; padding: 1rem 2.5rem;">Начать бесплатно</a>
+    </div>
 
     <section class="hero">
         <div class="badge">
@@ -776,6 +1085,36 @@
             <button class="btn-primary"
                 onclick="document.querySelector('#contacts').scrollIntoView({behavior: 'smooth'})">Расходы под контроль
                 <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Mobile mini-dashboard (shown only on mobile) -->
+        <div class="hero-mobile-card">
+            <div class="hero-mobile-label">Общий баланс</div>
+            <div class="hero-mobile-balance">11 600 000 <span style="font-size:1rem;font-weight:500;">₸</span></div>
+            <div style="font-size:0.8rem; color:#10b981; margin-bottom:1.4rem;"><i class="fa-solid fa-arrow-trend-up"></i> +12% к прошлому месяцу</div>
+            <div class="hero-mobile-stats">
+                <div class="hero-mobile-stat">
+                    <div class="hero-mobile-stat-label">Расходы (Авг)</div>
+                    <div class="hero-mobile-stat-val">1 150 000 ₸</div>
+                    <div class="hero-mobile-stat-trend down"><i class="fa-solid fa-arrow-trend-down"></i> −4%</div>
+                </div>
+                <div class="hero-mobile-stat">
+                    <div class="hero-mobile-stat-label">Накопления</div>
+                    <div class="hero-mobile-stat-val">2 640 000 ₸</div>
+                    <div class="hero-mobile-stat-trend"><i class="fa-solid fa-bullseye"></i> MacBook</div>
+                </div>
+            </div>
+            <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:8px;">Динамика расходов</div>
+            <div class="hero-mobile-bars">
+                <div class="hero-mobile-bar" style="height:30%"></div>
+                <div class="hero-mobile-bar" style="height:50%"></div>
+                <div class="hero-mobile-bar" style="height:40%"></div>
+                <div class="hero-mobile-bar active" style="height:80%"></div>
+                <div class="hero-mobile-bar" style="height:60%"></div>
+                <div class="hero-mobile-bar" style="height:45%"></div>
+                <div class="hero-mobile-bar" style="height:90%"></div>
+                <div class="hero-mobile-bar" style="height:35%"></div>
+            </div>
         </div>
 
         <div class="hero-visual">
@@ -901,9 +1240,9 @@
                 чтобы их стало больше. Это не статистика — это ваш персональный финансовый директор.</p>
         </div>
 
-        <div
+        <div class="analytics-grid"
             style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: 1000px; margin: 0 auto;">
-            <div>
+            <div class="analytics-text">
                 <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 1.5rem; letter-spacing: -0.5px;">Прозрение
                     наступает<br>с первого взгляда</h3>
                 <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">Сложные таблицы отнимают
@@ -931,14 +1270,14 @@
                     </li>
                 </ul>
                 <div
-                    style="padding: 1.5rem; background: rgba(59, 130, 246, 0.1); border-left: 4px solid var(--primary-color); border-radius: 0 12px 12px 0;">
+                    class="analytics-quote" style="padding: 1.5rem; background: rgba(59, 130, 246, 0.1); border-left: 4px solid var(--primary-color); border-radius: 0 12px 12px 0;">
                     <p style="font-style: italic; color: #fff; font-size: 1.05rem; margin: 0;">"Пользователи Finvy
                         начинают откладывать на 30% больше уже со второго месяца использования, просто видя свои
                         реальные цифры в понятном формате".</p>
                 </div>
             </div>
             <div style="position: relative;">
-                <div
+                <div class="ai-card"
                     style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-glass); border-radius: 20px; padding: 2rem; backdrop-filter: var(--glass-blur); box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
                     <div
                         style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
@@ -1008,6 +1347,36 @@
             item.addEventListener('mouseleave', () => {
                 item.style.background = 'var(--bg-card)';
             });
+        });
+
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        function openMenu() {
+            hamburger.classList.add('open');
+            mobileMenu.classList.add('open');
+            hamburger.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            hamburger.classList.remove('open');
+            mobileMenu.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.contains('open') ? closeMenu() : openMenu();
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeMenu();
         });
     </script>
 </body>
